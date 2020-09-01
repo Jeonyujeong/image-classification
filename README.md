@@ -1,7 +1,8 @@
 # Image Classification with TensorFlow Lite Model Maker
 - android application에 모델을 적용하기 위해서는 tflite 변환이 필요. 
+- on-device ML applications에 모델을 적용하기 위해 TensorFlow Lite Model Maker에서 모델 학습을 제공. 
 - TensorFlow Lite Model Maker를 통해 모델 학습 및 tflite 변환.
-- android application에 쉽게 모델을 적용할 수 있도록 한다.
+- android application에 모델을 쉽게 적용할 수 있도록 한다.
 
 # Model Maker 학습
 농산물 부패를 감지하는 모델을 만들기 위해 체리를 선택하여 체리 부패 정도를 감지하는 모델을 생성한다. 
@@ -27,8 +28,11 @@ dataset: https://github.com/RottenFruitsOSS/DataSet
 4. TensorFlow Lite Model 변환 및 export
    model.tflite 파일 생성
 ```
-on-device ML applications에 쉽게 모델을 적용하기 위해 TensorFlow Lite Model Maker에서 모델 학습을 제공한다. 
-ML Kit에서 제공하는 quickstart를 이용하여 쉽게 모델을 학습하고, 모바일에 적용한다. 
+## 예측 결과
+검은색 = 예측 맞음
+
+빨간색 = 예측 틀림 
+![](https://raw.githubusercontent.com/RottenFruitsOSS/image-classification/master/predict_cherry.png)
 
 ## Android Application 모델 적용
 RottenFruitsCamera: https://github.com/RottenFruitsOSS/RottenFruitsCamera
